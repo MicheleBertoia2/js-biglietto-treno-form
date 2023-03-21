@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+
+  <title>Biglietto Treno v.2</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h1>BooleanTrip</h1>
+      <h3>Predisponi il tuo viaggio</h3>
+
+      <div class="col-8">
+        <div class="inputs">
+          
+          <input type="text" id="username" placeholder="Nome e Cognome">
+          <input type="number" id="distance" placeholder="500">
+          <select name="age" id="age">
+            <option value="normal">compresa tra 19 e 64 anni</option>
+            <option value="junior">18 anni o meno</option>
+            <option value="senior">65 anni o più</option>
+          </select>
+
+          <button id="getTicket" class="d-block" >Genera biglietto</button>
+        </div>  
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="assets/js/scrypt.js"></script>
+</body>
+</html>
