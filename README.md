@@ -12,3 +12,13 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 
 ### steps
 
+1. creare gli input per i valori richiesti
+2. aggiungere un bottone 
+3. creare gli algoritmi per il calcolo del prezzo  
+4. creare i vari output
+5. al click del bottone leggere i valori inseriti
+6. stampare gli output in pagina
+ bonus
+7. aggiungere estrazione random numero carrozza e codice univoco
+8. stilare la pagina 
+9. aggiungere un bottone di reset 
