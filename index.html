@@ -8,14 +8,17 @@
   <!-- BOOTSTRAP -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
 
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <title>Biglietto Treno v.2</title>
 </head>
 <body>
 
-  <div class="container">
-    <div class="row">
+  <div class="container mb-container">
+    <div class="row h-100">
       
-      <div class="col-4 p-3">
+      <div class="col-4 p-3 bg-success bg-gradient ">
         <h1>Bootrain</h1>
         <h3>Predisponi il tuo viaggio</h3>
         <div class="inputs">
@@ -28,16 +31,46 @@
             <option value="senior">65 anni o più</option>
           </select>
           <div class="mb-buttons">
-            <button id="getTicket" class="btn-success btn" >Genera biglietto</button>
+            <button id="getTicket" class="btn-secondary btn" >Genera biglietto</button>
             <button id="reset" class="btn-danger btn" >Svuota</button>
           </div>
         </div>  
       </div>
       
-      <div class="col-8">
+      <div class="col-8 p-5">
         
-        <div class="border">
+        <div class="shadow-lg">
           <p id="output"></p>
+          
+          <div class="ticket w-100 mt-5 d-flex">
+
+            <div class="user bg-secondary text-bg-dark p-3 w-25 h-100">
+              <h4>Ciao!</h4>
+              <span id="enterName" class="text-uppercase"><strong id="enterName">gianni licogianni</strong></span>
+            </div>
+
+            <div class="ticket-body text-dark w-75">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-center">Carrozza</th>
+                    <th class="text-center">Fascia</th>
+                    <th class="text-center">Codice CP</th>
+                    <th class="text-center">Prezzo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-center" id="carrozza">1</th>
+                    <td class="text-center" id="discount">Mark</td>
+                    <td class="text-center" id="cpCode">Otto</td>
+                    <td class="text-center" id="price">@mdo</td>
+                  </tr>                  
+                </tbody>
+              </table>
+            </div>  
+
+          </div>
 
         </div>
 

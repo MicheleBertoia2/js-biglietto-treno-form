@@ -1,0 +1,13 @@
+.mb-container{
+  background-image: url(../img/bg-treno.jpg  );
+  height: 100vh!important;
+  background-size: cover;
+  background-position: center;
+}
+
+.ticket {
+
+  /* debug */
+  min-width: none;height: 200px;
+  background-color: white;
+}

@@ -38,6 +38,6 @@ getTicket.addEventListener('click', function(){
 })
 
 reset.addEventListener('click', function(){
-  username.value = ' ';
-  distance.value = ' ';
+  username.value = '';
+  distance.value = '';
 })
