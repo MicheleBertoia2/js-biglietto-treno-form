@@ -24,7 +24,7 @@
         <div class="inputs">
           
           <input type="text" class="w-100 my-3" id="username" placeholder=" Nome e Cognome">
-          <input type="number" class="w-100 my-3" id="distance" placeholder="500">
+          <input type="number" class="w-100 my-3" id="distance" placeholder="Inserisci la distanza">
           <select name="age" id="age" class="my-3">
             <option value="normal">compresa tra 19 e 64 anni</option>
             <option value="junior">18 anni o meno</option>
@@ -37,12 +37,9 @@
         </div>  
       </div>
       
-      <div class="col-8 p-5">
-        
-        <div class="shadow-lg">
-          <p id="output"></p>
+      <div class="col-8 p-5 ">        
           
-          <div class="ticket w-100 mt-5 d-flex">
+          <div class="ticket w-100 mt-5 d-flex shadow-lg d-none">
 
             <div class="user bg-secondary text-bg-dark p-3 w-25 h-100">
               <h4>Ciao!</h4>
@@ -61,10 +58,10 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th class="text-center" id="carrozza">1</th>
-                    <td class="text-center" id="discount">Mark</td>
-                    <td class="text-center" id="cpCode">Otto</td>
-                    <td class="text-center" id="price">@mdo</td>
+                    <th class="text-center" id="carrozza"></th>
+                    <th class="text-center" id="tipoSconto"></th>
+                    <th class="text-center" id="cpCode"></th>
+                    <th class="text-center" id="showPrice"></th>
                   </tr>                  
                 </tbody>
               </table>
@@ -72,7 +69,6 @@
 
           </div>
 
-        </div>
 
       </div>
     </div>
