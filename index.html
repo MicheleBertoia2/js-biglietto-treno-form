@@ -14,14 +14,14 @@
 
   <div class="container">
     <div class="row">
-      <h1>BooleanTrip</h1>
-      <h3>Predisponi il tuo viaggio</h3>
-
-      <div class="col-8">
+      
+      <div class="col-4 p-3">
+        <h1>Bootrain</h1>
+        <h3>Predisponi il tuo viaggio</h3>
         <div class="inputs">
           
-          <input type="text" id="username" placeholder="Nome e Cognome">
-          <input type="number" id="distance" placeholder="500">
+          <input type="text" class="w-100 my-3" id="username" placeholder="Nome e Cognome">
+          <input type="number" class="w-100 my-3" id="distance" placeholder="500">
           <select name="age" id="age">
             <option value="normal">compresa tra 19 e 64 anni</option>
             <option value="junior">18 anni o meno</option>
@@ -29,11 +29,16 @@
           </select>
 
           <button id="getTicket" class="d-block" >Genera biglietto</button>
-
-          <div class="border">
-            <p id="output"></p>
-          </div>
+          <button id="reset" class="d-block" >svuota</button>
         </div>  
+      </div>
+      
+      <div class="col-8">
+        
+        <div class="border">
+          <p id="output"></p>
+        </div>
+
       </div>
     </div>
   </div>
