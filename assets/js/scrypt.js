@@ -4,15 +4,15 @@ const juniorDiscount = 20;
 const output = document.getElementById('output');
 const getTicket = document.getElementById('getTicket');
 const reset = document.getElementById('reset');
-let username = document.getElementById('username');
-let distance = document.getElementById('distance');
-let age = document.getElementById('age');
+const name = document.getElementById('username');
+const trip = document.getElementById('distance');
+const fascia = document.getElementById('age');
 
 getTicket.addEventListener('click', function(){
   
-  username = username.value;
-  distance = distance.value;
-  age = age.value;
+  let username = name.value;
+  let distance = trip.value;
+  let age = fascia.value;
   const normalPrice = distance * priceKm;
   let discountPrice;
   let message;
@@ -34,10 +34,10 @@ getTicket.addEventListener('click', function(){
     `
     output.innerHTML = message
   }
- 
+  
 })
 
 reset.addEventListener('click', function(){
-  username.value = '';
-  distance.value = '';
+  username.value = ' ';
+  distance.value = ' ';
 })

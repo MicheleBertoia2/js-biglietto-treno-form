@@ -20,16 +20,17 @@
         <h3>Predisponi il tuo viaggio</h3>
         <div class="inputs">
           
-          <input type="text" class="w-100 my-3" id="username" placeholder="Nome e Cognome">
+          <input type="text" class="w-100 my-3" id="username" placeholder=" Nome e Cognome">
           <input type="number" class="w-100 my-3" id="distance" placeholder="500">
-          <select name="age" id="age">
+          <select name="age" id="age" class="my-3">
             <option value="normal">compresa tra 19 e 64 anni</option>
             <option value="junior">18 anni o meno</option>
             <option value="senior">65 anni o più</option>
           </select>
-
-          <button id="getTicket" class="d-block" >Genera biglietto</button>
-          <button id="reset" class="d-block" >svuota</button>
+          <div class="mb-buttons">
+            <button id="getTicket" class="btn-success btn" >Genera biglietto</button>
+            <button id="reset" class="btn-danger btn" >Svuota</button>
+          </div>
         </div>  
       </div>
       
@@ -37,6 +38,7 @@
         
         <div class="border">
           <p id="output"></p>
+
         </div>
 
       </div>
